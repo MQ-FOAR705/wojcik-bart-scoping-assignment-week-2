@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+
+\title{FOAR705 Digital Humanities - Proof of Concept Scoping Exercise}
+\author{Bartlomiej Wojcik}
+\date{15 August 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Project background}
+My research project does not involve the analysis of numerical data, it deals with a qualitative analysis of a contemporary Japanese work of literature in the genre of historical fiction. While the project does not and will not leverage quantifiable data, the material being analysed has been packaged for both print and digital distribution. Even though I own and use both versions of the text, I most commonly work with the digital package due to usability advantages it offers. 
+
+\section{Jobs}
+In my project, I spend most of my time working (reading) contemporary Japanese literature in original. As Japanese is my third language, working with Japanese literature requires me to conduct
+a large number of dictionary look-ups per page.
+\section{Pains and Pain Relievers}
+\subsection{Pains}
+\subsubsection{Issues with printed sources:}
+There is a number of problems that makes dictionary lookup in Japanese print cumbersome.
+\begin{enumerate}
+    \item Japanese script is largely logographic and does not carry phonetic information - Japanese words can be looked up in online dictionaries by using phonetic input, however most adult literature does not assume being read by someone requiring the phonetic guidance of ruby text. If I do not know how the word is pronounced, I cannot use this method. 
+    \item Where ruby text is not available in print, the logographs need to be reproduced stroke-for-stroke when inputting into an electronic dictionary with a hand writing recognition function. This is cumbersome and time-consuming especially when a working with a difficult text,
+\subsubsection{Issues with digital content:}
+Digitally packaged and distributed literature, in theory (as I explain below) alleviates those issues by allowing the reader to use built-in dictionaries (where available) and copying-pasting of unknown words between the source text and online dictionaries (where built in dictionaries are not available). One can easily and instantaneously import books from Japan in Japanese, with apps like Kindle for PC (there is no region locking for this content at the time of my writing) but there are a few problems with how this is packaged up by Amazon.
+\begin{enumerate}
+    \item One would think that they would be able to copy-paste words into online dictionaries because Kindle delivered content is fundamentally just marked up and packaged digital text, but because of Digital Rights Management (DRM), Kindle for PC always appends a citation/reference to any copied text, even as short as one word. This means that the user cannot simply copy and paste between Kindle and a dictionary, for each look-up the garbage citation data has to be hand removed.
+    \item Kindle for PC attempts to help the reader by splitting words (Japanese is a language that does not use spaces between words) like this "\begin{CJK*}{UTF8}{min}夜　の　コンパートメント　は　静か　だ。\end{CJK*}". In my practical experience it does not always get it right when the user tries to copy conjugated verbs and compounds nouns. The injected white spaces become garbage data which further hinders efficient dictionary lookup.
+    \item Kindle for PC does have a built-in dictionary but it is not smart enough to pick up inflected words like conjugated verbs. For example, it understands and supplies a definition for a word like "\begin{CJK*}{UTF8}{min}寝転がる\end{CJK*}" but it is not be able to recognise its past tense form "\begin{CJK*}{UTF8}{min}寝転がった\end{CJK*}" and reports "No definitions found".
+\end{enumerate}
+\end{enumerate}
+\subsection{Pain Relievers}
+It would be most helpful to be able to get a definition of an unknown word by simply hovering over it, regardless of whether the word is in its dictionary or conjugated form. Browser plugins like the now-obsolete Rikaichan for Firefox, its Chrome port Rikaikun and modern Rikaichan ports to Firefox Quantum like Rikaichamp as well as alternative hover dictionaries like Yomichan, make this possible, but only within the web browsers they are built for. They cannot read text outside of the browser window such as in the books distributed digitally by Amazon via their Kindle platform. There is of course the web based Kindle Cloud Reader, however some texts (such as the one I am working on in my research), are restricted from being accessed this way. This means that these books cannot be opened in a browser window and have to be read using Amazon's native Kindle application. How do I get over this obstacle? Circumnavigating these restrictions and enabling hover dictionary use in digitally distributed Japanese literature would not only expedite my reading, it would enable other students, researchers and scholars to engage with difficult Japanese texts natively, sooner and more readily.
+\section{Gains and Gain Creators}
+Before I start making what will look like a wish list, I should remark that this is indeed the biggest 'pain' in my research but also one to which I have a working solution that I developed while setting up my research environment. What follows below is not merely a wish list.
+\subsection{Gains}
+I want to be able to be able to speed up my dictionary look-ups while working with Japanese literature in original.
+\subsection{Gain Creators}
+I would like to have a de-inflection capable hover dictionary that quickly provides word pronunciation and definition information while I am reading digitally packaged Japanese literature in original.
+\end{document}
